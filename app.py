@@ -538,10 +538,6 @@ def werkbrief_detail(wb_id):
         totaal_prijs=totaal
     )
 
-USERS = {
-    "admin": generate_password_hash("Sheerenloo_123!"),
-    "gebruiker": generate_password_hash("Geheim_456!")
-}
 
 @app.route("/login", methods=["GET","POST"])
 def login():
